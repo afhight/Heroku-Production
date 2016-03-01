@@ -3,10 +3,10 @@
 <h1>All Posts</h1>
 
 <table>
-
+<div class="well">
   <tbody>
     <% @posts.each do |post| %>
-      <div class="well">
+      
       <tr>
         <td><%= image_tag post.avatar.thumb.url %></td>
         <td><%= post.title %></td>
@@ -16,9 +16,10 @@
         <td><%= link_to '/ Edit', edit_post_path(post) %></td>
         <td><%= link_to '/ Destroy', post, method: :delete, data: { confirm: 'Are you sure?' } %></td>
       </tr>
-    </div>
+  
     <% end %>
   </tbody>
+  </div>
 </table>
 
 <br>
