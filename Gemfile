@@ -49,11 +49,13 @@ gem 'tzinfo-data', platforms: [:mingw, :mswin, :x64_mingw, :jruby]
 gem 'bootstrap-sass'
 gem 'carrierwave'
 gem 'mini_magick'
-
-
+gem 'figaro'
+gem 'fog'
 
 #for Heroku:
 group :production do
   gem 'pg'
   gem 'rails_12factor'
 end
+
+
